@@ -1,254 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hasmukh Suthar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasmukh Suthar | Login Profile</title>
   <style>
+    :root {
+      --bg: #f2f2f2;
+      --text: #333;
+      --card: white;
+    }
+    body.dark {
+      --bg: #121212;
+      --text: #f2f2f2;
+      --card: #1e1e1e;
+    }
+
     body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      text-align: center;
+      padding: 0;
     }
+
     header {
-      padding: 20px;
-      background: #111;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .welcome {
-      margin: 30px 0;
-      font-size: 1.8em;
-      animation: vibrate 1s infinite;
-    }
-    @keyframes vibrate {
-      0% { transform: translate(0); }
-      25% { transform: translate(2px, 2px); }
-      50% { transform: translate(-2px, -2px); }
-      75% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
-    }
-    footer {
-      background: #111;
-      padding: 10px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hasmukh Suthar</h1>
-  </header>
-
-  <div class="welcome">
-    Welcome to Hasmukh Suthar Website!
-  </div>
-
-  <footer>
-    © 2025 | Designed by Hasmukh Suthar
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hasmukh Suthar</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      padding: 20px;
-      background: #111;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .main-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 20px;
-      gap: 20px;
-    }
-    .profile-img {
-      flex: 1;
-      max-width: 300px;
-    }
-    .profile-img img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .welcome {
-      flex: 2;
-      font-size: 1.8em;
-      animation: vibrate 1s infinite;
-    }
-    @keyframes vibrate {
-      0% { transform: translate(0); }
-      25% { transform: translate(2px, 2px); }
-      50% { transform: translate(-2px, -2px); }
-      75% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
-    }
-    footer {
-      background: #111;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hasmukh Suthar</h1>
-  </header>
-
-  <div class="main-content">
-    <div class="profile-img">
-      <img src="hasu.jpg" alt="Hasmukh Suthar">
-    </div>
-    <div class="welcome">
-      Welcome to Hasmukh Suthar Website!
-    </div>
-  </div>
-
-  <footer>
-    © 2025 | Designed by Hasmukh Suthar
-  </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hasmukh Suthar</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      transition: background-color 0.5s ease;
-    }
-    body.signed-in {
-      background-color: #006400; /* dark green */
-    }
-    header {
-      padding: 20px;
-      background: #111;
-      text-align: center;
-    }
-    h1 {
-      margin: 10px 0 0;
-      font-size: 2.5em;
-    }
-    .welcome-header {
-      font-size: 1.5em;
-      animation: vibrate 1s infinite;
-    }
-    .main-content {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 20px;
-      gap: 20px;
-    }
-    .profile-img {
-      flex: 1;
-      max-width: 300px;
-    }
-    .profile-img img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    @keyframes vibrate {
-      0% { transform: translate(0); }
-      25% { transform: translate(2px, 2px); }
-      50% { transform: translate(-2px, -2px); }
-      75% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
-    }
-    .auth-section {
-      text-align: center;
-      margin: 40px auto;
-      max-width: 400px;
-      padding: 20px;
-      background-color: #111;
-      border-radius: 10px;
-    }
-    .auth-section input {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    .auth-section button {
-      padding: 10px 20px;
-      background-color: #444;
+      background: green;
       color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .toggle-mode {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      padding: 6px 12px;
+      background: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
-    .auth-section button:hover {
-      background-color: #666;
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
     }
-    footer {
-      background: #111;
+
+    .login-section, .profile-section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    input, button {
       padding: 10px;
-      text-align: center;
+      margin: 8px 0;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button {
+      background: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="welcome-header">Welcome to Hasmukh Suthar Website!</div>
-    <h1>Hasmukh Suthar</h1>
+    <h1>Welcome to Hasmukh App</h1>
+    <button class="toggle-mode" onclick="toggleMode()">🌙 Toggle Mode</button>
   </header>
 
-  <div class="main-content">
-    <div class="profile-img">
-      <img src="hasu.jpg" alt="Hasmukh Suthar">
+  <div class="container">
+    <!-- Login Section -->
+    <div id="login" class="login-section active">
+      <h2>🔐 Login</h2>
+      <input type="text" id="loginInput" placeholder="Enter Mobile or Email" />
+      <input type="text" id="otpInput" placeholder="Enter OTP (demo: 1234)" />
+      <button onclick="verifyLogin()">Login</button>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="profile" class="profile-section">
+      <h2>👤 Hasmukh Suthar</h2>
+      <p><strong>📱 Mobile:</strong> 7976690477</p>
+      <p><strong>📧 Email:</strong> hasmukhsuthar673@gmail.com</p>
+      <h3>📸 My Tool Gallery</h3>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200?text=Makita+Drill" alt="Makita Drill">
+        <img src="https://via.placeholder.com/200?text=Bosch+Grinder" alt="Bosch Grinder">
+        <img src="https://via.placeholder.com/200?text=Hikoki+Drill" alt="Hikoki Drill">
+        <img src="https://via.placeholder.com/200?text=DCA+Grinder" alt="DCA Grinder">
+      </div>
     </div>
   </div>
 
-  <div class="auth-section">
-    <h2>Login / Sign In</h2>
-    <input type="text" placeholder="Enter Mobile Number or Email" id="userInput">
-    <button onclick="sendOTP()">Send OTP</button>
-    <input type="text" placeholder="Enter OTP" id="otpInput">
-    <button onclick="verifyOTP()">Verify</button>
-  </div>
-
-  <footer>
-    © 2025 | Designed by Hasmukh Suthar
-  </footer>
-
   <script>
-    function sendOTP() {
-      alert("OTP sent to entered Mobile/Email (demo only)");
+    function toggleMode() {
+      document.body.classList.toggle("dark");
     }
-    function verifyOTP() {
-      document.body.classList.add("signed-in");
-      alert("Signed in successfully (demo only)");
+
+    function verifyLogin() {
+      const otp = document.getElementById('otpInput').value;
+      if (otp === '1234') {
+        document.getElementById('login').classList.remove('active');
+        document.getElementById('profile').classList.add('active');
+        alert("Login Successful!");
+      } else {
+        alert("Invalid OTP! Please try 1234.");
+      }
     }
   </script>
+
 </body>
 </html>
