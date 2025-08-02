@@ -128,3 +128,127 @@
   </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasmukh Suthar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      transition: background-color 0.5s ease;
+    }
+    body.signed-in {
+      background-color: #006400; /* dark green */
+    }
+    header {
+      padding: 20px;
+      background: #111;
+      text-align: center;
+    }
+    h1 {
+      margin: 10px 0 0;
+      font-size: 2.5em;
+    }
+    .welcome-header {
+      font-size: 1.5em;
+      animation: vibrate 1s infinite;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+    .profile-img {
+      flex: 1;
+      max-width: 300px;
+    }
+    .profile-img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    @keyframes vibrate {
+      0% { transform: translate(0); }
+      25% { transform: translate(2px, 2px); }
+      50% { transform: translate(-2px, -2px); }
+      75% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+    .auth-section {
+      text-align: center;
+      margin: 40px auto;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 10px;
+    }
+    .auth-section input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .auth-section button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .auth-section button:hover {
+      background-color: #666;
+    }
+    footer {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="welcome-header">Welcome to Hasmukh Suthar Website!</div>
+    <h1>Hasmukh Suthar</h1>
+  </header>
+
+  <div class="main-content">
+    <div class="profile-img">
+      <img src="hasu.jpg" alt="Hasmukh Suthar">
+    </div>
+  </div>
+
+  <div class="auth-section">
+    <h2>Login / Sign In</h2>
+    <input type="text" placeholder="Enter Mobile Number or Email" id="userInput">
+    <button onclick="sendOTP()">Send OTP</button>
+    <input type="text" placeholder="Enter OTP" id="otpInput">
+    <button onclick="verifyOTP()">Verify</button>
+  </div>
+
+  <footer>
+    © 2025 | Designed by Hasmukh Suthar
+  </footer>
+
+  <script>
+    function sendOTP() {
+      alert("OTP sent to entered Mobile/Email (demo only)");
+    }
+    function verifyOTP() {
+      document.body.classList.add("signed-in");
+      alert("Signed in successfully (demo only)");
+    }
+  </script>
+</body>
+</html>
